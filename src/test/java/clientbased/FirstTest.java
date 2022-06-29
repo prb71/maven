@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 public class FirstTest {
     @Test
 	public void test() {
-		System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2000));
 		driver.manage().window().maximize();
