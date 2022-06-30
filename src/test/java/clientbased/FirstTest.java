@@ -4,7 +4,7 @@ import org.testng.annotations.BeforeGroups;
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 import java.time.Duration;
-import org.openqa.selenium.chrome.ChromeOptions;
+//import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,9 +15,10 @@ public class FirstTest {
     @Test
 	public void test() {
 	//        WebDriver driver;
-		System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome");
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("headless");
+	//	System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome");
+	//	ChromeOptions options = new ChromeOptions();
+	//	options.addArguments("headless");
+		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver(options);
 	//	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2000));
 		driver.manage().window().maximize();
