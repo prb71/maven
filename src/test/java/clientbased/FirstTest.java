@@ -12,40 +12,40 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class FirstTest {
-        @Test
-	public void webDriverManagerChrome()
-	{
-		WebDriverManager.chromedriver().setup();
-		WebDriver driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
-			
-		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		
-		driver.get("https://classic.crmpro.com/index.html");
-         }
-}
-
 // public class FirstTest {
-//     @Test
-// 	public void test() {
-// 	//        WebDriver driver;
-// 	//	System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome");
-// 	//	ChromeOptions options = new ChromeOptions();
-// 	//	options.addArguments("headless");
+//         @Test
+// 	public void webDriverManagerChrome()
+// 	{
 // 		WebDriverManager.chromedriver().setup();
-// 		WebDriver driver = new ChromeDriver(options);
-// 	//	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2000));
+// 		WebDriver driver = new ChromeDriver();
 // 		driver.manage().window().maximize();
-// 		driver.get("https://dev.productively.app/login");
-// 		driver.findElement(By.xpath("//input[@name='email']")).sendKeys("clientbasedtest@gmail.com");
-// 		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("Testing@13");
-// 		driver.findElement(By.xpath("//button[text()='Log In']")).click();
-// 		AssertJUnit.assertEquals(driver.findElement(By.tagName("h4")).getText(), "Start Tracking Time");
-// 		System.out.println(driver.findElement(By.tagName("h4")).getText());
-// 	}
+// 		driver.manage().deleteAllCookies();
+			
+// 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+// 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		
+// 		driver.get("https://classic.crmpro.com/index.html");
+//          }
+// }
+
+public class FirstTest {
+    @Test
+	public void test() {
+	//        WebDriver driver;
+	//	System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome");
+	//	ChromeOptions options = new ChromeOptions();
+	//	options.addArguments("headless");
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver = new ChromeDriver(options);
+	//	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2000));
+		driver.manage().window().maximize();
+		driver.get("https://dev.productively.app/login");
+		driver.findElement(By.xpath("//input[@name='email']")).sendKeys("clientbasedtest@gmail.com");
+		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("Testing@13");
+		driver.findElement(By.xpath("//button[text()='Log In']")).click();
+		AssertJUnit.assertEquals(driver.findElement(By.tagName("h4")).getText(), "Start Tracking Time");
+		System.out.println(driver.findElement(By.tagName("h4")).getText());
+	}
 //    @Test(groups = { "demo" })	
 //    public void test1() {
 //    	System.out.println("check group1");
@@ -71,7 +71,7 @@ public class FirstTest {
 //    	System.out.println("enabled the testcase");
 //    }
     
-// }
+}
 
 
 
