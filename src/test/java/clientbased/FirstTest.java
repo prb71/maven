@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 public class FirstTest {
     @Test
 	public void test() {
-		WebDriver driver;
+	//        WebDriver driver;
 		System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome");
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("headless");
