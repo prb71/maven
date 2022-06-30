@@ -37,11 +37,11 @@ public class FirstTest {
 	//	options.addArguments("headless");
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions options = new ChromeOptions();
-		options.add_argument("headless");
-options.add_argument("disable-infobars");
-options.add_argument("disable-dev-shm-usage");
-options.add_argument("no-sandbox");
-options.add_argument("remote-debugging-port=9222");
+		options.addArguments("headless");
+options.addArguments("disable-infobars");
+options.addArguments("disable-dev-shm-usage");
+options.addArguments("no-sandbox");
+options.addArguments("remote-debugging-port=9222");
                 WebDriver driver = new ChromeDriver(options);
 	//	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2000));
 		driver.manage().window().maximize();
