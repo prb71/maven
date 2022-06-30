@@ -19,7 +19,7 @@ public class FirstTest {
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("headless");
 		WebDriver driver = new ChromeDriver(options);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2000));
+	//	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2000));
 		driver.manage().window().maximize();
 		driver.get("https://dev.productively.app/login");
 		driver.findElement(By.xpath("//input[@name='email']")).sendKeys("clientbasedtest@gmail.com");
