@@ -38,11 +38,11 @@ public class FirstTest {
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("headless");
-options.addArguments("--disable-infobars");
-options.addArguments("--crash-dumps-dir=/tmp")
-options.addArguments("--disable-dev-shm-usage");
-options.addArguments("--no-sandbox");
-options.addArguments("--remote-debugging-port=9222");
+options.addArguments("disable-infobars");
+options.addArguments("crash-dumps-dir=/tmp")
+options.addArguments("disable-dev-shm-usage");
+options.addArguments("no-sandbox");
+options.addArguments("remote-debugging-port=9222");
                 WebDriver driver = new ChromeDriver(options);
 	//	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2000));
 		driver.manage().window().maximize();
