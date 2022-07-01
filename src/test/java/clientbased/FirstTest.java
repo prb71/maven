@@ -30,7 +30,7 @@ import org.testng.annotations.Test;
 
 public class FirstTest {
     @Test
-	public void test() {
+	public void test() throws IOException,InterruptedException{
 	//        WebDriver driver;
 	//	System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome");
 	//	ChromeOptions options = new ChromeOptions();
