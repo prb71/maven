@@ -53,30 +53,30 @@ options.addArguments("--remote-debugging-port=9222");
 	  //      AssertJUnit.assertEquals(driver.findElement(By.tagName("h4")).getText(), "Start Tracking Time");
 	//	System.out.println(driver.findElement(By.tagName("h4")).getText());
 	}
-//    @Test(groups = { "demo" })	
-//    public void test1() {
-//    	System.out.println("check group1");
-//    }
-//    @Test(groups = { "demo" })	
-//    public void test2() {
-//    	System.out.println("check group2");
-//    }
-//    @Test(priority=2)
-//    public void test3() {
-//    	System.out.println("check priority2");
-//    }
-//    @Test(priority=1)
-//    public void test4() {
-//    	System.out.println("check priority1");
-//    }
-//    @Test(invocationCount=5)
-//    public void test5() {
-//    	System.out.println("check invocation");
-//    }
-//    @Test(enabled=false)
-//    public void test6() {
-//    	System.out.println("enabled the testcase");
-//    }
+   @Test(groups = { "demo" })	
+   public void test1() {
+   	System.out.println("check group1");
+   }
+   @Test(groups = { "demo" })	
+   public void test2() {
+   	System.out.println("check group2");
+   }
+   @Test(priority=2)
+   public void test3() {
+   	System.out.println("check priority2");
+   }
+   @Test(priority=1)
+   public void test4() {
+   	System.out.println("check priority1");
+   }
+   @Test(invocationCount=5)
+   public void test5() {
+   	System.out.println("check invocation");
+   }
+   @Test(enabled=false)
+   public void test6() {
+   	System.out.println("enabled the testcase");
+   }
     
 }
 
