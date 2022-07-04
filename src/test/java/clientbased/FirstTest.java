@@ -80,7 +80,7 @@ options.addArguments("--remote-debugging-port=9222");
    	System.out.println("enabled the testcase");
    }
    @Test
-	public void createclient() {
+	public void createclient(WebDriver driver) {
 		  driver.findElement(By.xpath("//a[text()='Clients']")).click();
 		 //click on add client button
          driver.findElement(By.xpath("//button[@type='submit']")).click();
