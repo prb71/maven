@@ -54,6 +54,37 @@ options.addArguments("--remote-debugging-port=9222");
 		Thread.sleep(2000);
 	      AssertJUnit.assertEquals(driver.findElement(By.tagName("h4")).getText(), "Start Tracking Time");
 		System.out.println(driver.findElement(By.tagName("h4")).getText());
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//a[text()='Clients']")).click();
+		 //click on add client button
+         driver.findElement(By.xpath("//button[@type='submit']")).click();
+         Thread.sleep(2000);
+        //send name
+         driver.findElement(By.xpath("//input[@name='name']")).sendKeys("client-1");
+        Thread.sleep(2000);
+        //send address
+        driver.findElement(By.xpath("//input[@name='address']")).sendKeys("gota");
+        Thread.sleep(2000);
+        //contact name
+        driver.findElement(By.xpath("//input[@name='contact_name']")).sendKeys("mrai");
+        Thread.sleep(2000);
+        //email
+         driver.findElement(By.xpath("//input[@name='contact_email']")).sendKeys("abc@gmail.com");
+        Thread.sleep(2000);
+        //select currency
+         driver.findElement(By.xpath("//mat-select[@formcontrolname='currency']")).click();
+        Thread.sleep(2000);
+         driver.findElement(By.xpath("//span[text()=' INR ']")).click();
+        Thread.sleep(2000);
+        //number
+        // await driver.findElement(By.xpath("//input[@name='contact_number']")).sendKeys(8764128989);
+        // await driver.sleep(2000);
+        //hourely rate
+         driver.findElement(By.xpath("//input[@name='hourly_rate']")).sendKeys("2");
+        Thread.sleep(2000);
+        //click on create button
+         driver.findElement(By.xpath("//span[text()='Create']")).click();
+		Thread.sleep(2000);
 	}
    @Test(groups = { "demo" })	
    public void test1() {
@@ -79,39 +110,6 @@ options.addArguments("--remote-debugging-port=9222");
    public void test6() {
    	System.out.println("enabled the testcase");
    }
-   @Test
-	public void createclient(WebDriver driver) {
-		  driver.findElement(By.xpath("//a[text()='Clients']")).click();
-		 //click on add client button
-         driver.findElement(By.xpath("//button[@type='submit']")).click();
-         
-        //send name
-         driver.findElement(By.xpath("//input[@name='name']")).sendKeys("client-1");
-        
-        //send address
-        driver.findElement(By.xpath("//input[@name='address']")).sendKeys("gota");
-        
-        //contact name
-        driver.findElement(By.xpath("//input[@name='contact_name']")).sendKeys("mrai");
-        
-        //email
-         driver.findElement(By.xpath("//input[@name='contact_email']")).sendKeys("abc@gmail.com");
-        
-        //select currency
-         driver.findElement(By.xpath("//mat-select[@formcontrolname='currency']")).click();
-        
-         driver.findElement(By.xpath("//span[text()=' INR ']")).click();
-        
-        //number
-        // await driver.findElement(By.xpath("//input[@name='contact_number']")).sendKeys(8764128989);
-        // await driver.sleep(2000);
-        //hourely rate
-         driver.findElement(By.xpath("//input[@name='hourly_rate']")).sendKeys("2");
-        
-        //click on create button
-         driver.findElement(By.xpath("//span[text()='Create']")).click();
-        
-	}
     
 }
 
