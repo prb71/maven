@@ -56,6 +56,7 @@ options.addArguments("--remote-debugging-port=9222");
 		System.out.println(driver.findElement(By.tagName("h4")).getText());
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//a[text()='Clients']")).click();
+		Thread.sleep(2000);
 		 //click on add client button
          driver.findElement(By.xpath("//button[@type='submit']")).click();
          Thread.sleep(2000);
