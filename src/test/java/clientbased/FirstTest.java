@@ -54,7 +54,7 @@ options.addArguments("--remote-debugging-port=9222");
 		Thread.sleep(2000);
 	      AssertJUnit.assertEquals(driver.findElement(By.tagName("h4")).getText(), "Start Tracking Time");
 		System.out.println(driver.findElement(By.tagName("h4")).getText());
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		driver.findElement(By.xpath("//a[text()='Clients']")).click();
 		Thread.sleep(2000);
 		 //click on add client button
