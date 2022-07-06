@@ -54,9 +54,12 @@ options.addArguments("--remote-debugging-port=9222");
 		//Thread.sleep(2000);
 	     // AssertJUnit.assertEquals(driver.findElement(By.tagName("h4")).getText(), "Start Tracking Time");
 		// System.out.println(driver.findElement(By.tagName("h4")).getText());
-		Thread.sleep(4000);
-		driver.findElement(By.xpath("//a[@class='nav-link active']")).click();
-		Thread.sleep(4000);
+		Thread.sleep(2000);
+		WebDriverWait wait1 = new WebDriverWait(driver, 10);
+WebElement element1 = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[text()='Clients']")));
+element1.click();
+	//	driver.findElement(By.xpath("//a[@class='nav-link active']")).click();
+		Thread.sleep(2000);
 		 //click on add client button
          driver.findElement(By.xpath("//button[@type='submit']")).click();
          Thread.sleep(2000);
