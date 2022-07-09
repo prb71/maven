@@ -63,7 +63,8 @@ options.addArguments("--remote-debugging-port=9222");
 //element.click();
 	//	driver.findElement(By.xpath("//a[@class='nav-link active']")).click();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.findElement(By.xpath("//a[text()='Clients']")).click();
+		driver.findElement(By.xpath("//a[@class='nav-link active']")).click();
+		//driver.findElement(By.xpath("//a[text()='Clients']")).click();
 		Thread.sleep(2000);
 		 //click on add client button
          driver.findElement(By.xpath("//button[@type='submit']")).click();
