@@ -62,7 +62,7 @@ options.addArguments("--remote-debugging-port=9222");
 //WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[text()='Clients']")));
 //element.click();
 	//	driver.findElement(By.xpath("//a[@class='nav-link active']")).click();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//a[@class='nav-link active']")).click();
 		//driver.findElement(By.xpath("//a[text()='Clients']")).click();
 		Thread.sleep(2000);
